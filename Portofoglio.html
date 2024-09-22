@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <!-- Liens vers les fichiers CSS externes pour Bootstrap, FontAwesome et Animate.css -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> <!--Pour simplifier la mise en page et le style-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"><!--Pour intégrer facilement des icônes CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"><!--Pour ajouter facilement des animations dynamiques-->
+    <link rel="stylesheet" href="./boots_css/Portofoglio.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Petrachi Diego</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+
+                <!-- Liens de navigation vers les différentes sections -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#about" data-target="#about">À propos de moi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#stages" data-target="#stages">Stages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sections" data-target="#sections">Sections</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="Tableau - Competences - Epreuve E4 - BTS SIO 2024.pdf" rel="noopener noreferrer">Le tableau de compétences</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Présentation -->
+<section class="py-5 bg-light text-center animate__animated animate__fadeIn">
+    <div class="container">
+        <h1 class="display-4">Bienvenue sur mon portfolio</h1>
+        <p class="lead">Je suis un jeune aspirant développeur et je vous souhaite la bienvenue sur mon portfolio.</p>
+        <p>Vous pouvez me contacter à l'adresse email : <a href="mailto:diegotar005@gmail.com">diegotar005@gmail.com</a></p>
+        <p>Numéro de téléphone : +33 7 83 12 59 88</p>
+        <p>Parcours scolaire : <br>
+           - Lycée Jacques Brel, Vénissieux, 2023-en cours<br>
+           - lycée hector guimard, Lyon, 2020-2023</p>
+    </div>
+</section>
+
+<!-- À propos de moi -->
+<section id="about" class="py-5 text-center animate__animated animate__fadeInUp">
+    <div class="container">
+        <h2>À propos de moi</h2>
+        <h5>Depuis mon enfance, je nourris une passion profonde pour l'informatique. Actuellement étudiant en BTS SIO, je m'efforce continuellement de relever de nouveaux défis afin d'enrichir mes compétences et de contribuer à des projets innovants.</h5>
+    </div>
+</section>
+
+<!-- Diplômes -->
+<section id="diplomes" class="py-5 text-center animate__animated animate__fadeInUp">
+    <div class="container">
+        <h2>Diplômes</h2>
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Bac Pro MELEC</h5>
+                        <p class="card-text">J'ai eu mon Bac en 2023.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stages -->
+<section id="stages" class="py-5 bg-light text-center animate__animated animate__fadeInUp">
+    <div class="container">
+        <h2>Mes Stages</h2>
+        <div id="stagesCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center">
+                        <div class="card mx-2">
+                            <div class="card-body">
+                                <img src="images/Logo Mobelec.jpg" class="card-img-top" alt="Image Stage Mobelec">
+                                <h5 class="card-title">Mobelec</h5>
+                                <p class="card-text">J'ai configuré des bornes électrique pour un lycée.</p>
+                                <a href="Stage/Stage.html" class="btn btn-primary mt-2">Voir détails</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Présentation des Loisirs -->
+<section id="presentation-loisirs" class="py-5 bg-light text-center animate__animated animate__fadeInUp">
+    <div class="container">
+        <h2>Loisirs</h2>
+        <h5>En dehors de mes études en informatique, j'apprécie consacrer mon temps à divers loisirs qui enrichissent mon quotidien. Passionné par le montage de vidéos, j'explore également les avancées de l'intelligence artificielle et je développe des jeux vidéo comme moyen d'explorer ma créativité. Ces activités me permettent d'approfondir mes compétences techniques tout en cultivant ma passion pour la technologie.</h5>
+    </div>
+</section>
+
+<!-- Sections -->
+<section id="sections" class="py-5 bg-light text-center animate__animated animate__fadeInUp">
+    <div class="container">
+        <h2>Sections</h2>
+        <div class="row">
+
+            <!-- Projets Personnels -->
+            <div class="col-md-6 mb-4 offset-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Projets Personnels</h5>
+                        <p class="card-text">Vous trouverez ici tous mes projets personnels incluant l'informatique, l'intelligence artificielle, le montage vidéo, et les jeux vidéo.</p>
+                        <a href="./Sections/Projets perso.html"class="btn btn-primary mt-2">Voir détails</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Pied de page -->
+    <!-- Réseaux sociaux -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/diego-petrachi-071a72267/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="mb-0">&copy; 2024 Petrachi Diego. Tous droits réservés.</p>
+        </div>
+    </footer>
+    
+    <!-- Liens vers les fichiers JavaScript nécessaires pour Bootstrap et les animations -->
+    <script src="./boots_js/Portofoglio.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
